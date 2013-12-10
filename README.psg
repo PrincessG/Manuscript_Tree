@@ -4,5 +4,6 @@ Manuscript_Tree
 
 #First, navigate to the folder with the alignment files
 
-python phyluce/bin/align/format_nexus_files_for_raxml.py \
-inputfolder outputfolder raxml/output-file-name.phylip   
+python ~/Desktop/format_nexus_files_for_raxml.py\
+~/Documents/Research Projects/Acanthomorpha/PicMeExperimentation/tapir/tapir\
+/Users/Princess/Desktop raxml/output-file-name.phylip   
