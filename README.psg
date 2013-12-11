@@ -2,8 +2,6 @@ Manuscript_Tree
 ===============
 #Here are the commands I'm using to make the phylogeny for the Manuscript.
 
-#First, navigate to the folder with the alignment files
-
-python ~/Desktop/format_nexus_files_for_raxml.py\
-~/Documents/Research Projects/Acanthomorpha/PicMeExperimentation/tapir/tapir\
-/Users/Princess/Desktop raxml/output-file-name.phylip   
+#First, connect the analysis lab computer via the ssh key. Then, navigate to the folder with the alignment files
+ 
+python  /usr/local/bin/format_nexus_files_for_raxml.py ~/Desktop/PSG_Analyses/Percomorph_500/*.nex ~/Desktop/PSG_Analyses/Percomorph_500_Phylip/
