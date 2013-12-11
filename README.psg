@@ -11,14 +11,13 @@ python /usr/local/bin/convert_one_align_to_another.py ~/Desktop/PSG_Analyses/Per
 python /usr/local/bin/cloudforest_mpi.py ~/Desktop/PSG_Analyses/Percomorph_500_Phylip/ \
 ~/Desktop/PSG_Analyses/Percomorph_500_Cloudforest_Output/ \
 genetrees \
-$HOME/git/cloudforest/cloudforest/binaries/PhyML3linux64 \
+/home/analysis/Downloads/PhyML-3.1/PhyML-3.1_linux64 \
 --parallelism multiprocessing \
 --cores 8
 
 
 
 
+#To create one giant concatenated phylip file for all your loci run the following:
 
-Then, navigate to the folder with the alignment files
- 
 python  /usr/local/bin/format_nexus_files_for_raxml.py ~/Desktop/PSG_Analyses/Percomorph_500/ ~/Desktop/PSG_Analyses/Percomorph_500_Phylip/
