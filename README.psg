@@ -7,6 +7,13 @@ python /usr/local/bin/convert_one_align_to_another.py ~/Desktop/PSG_Analyses/Per
 --input-format nexus \
 --output-format phylip \
 
+#Then run CloudForest on the UCE phylip files to calculate the substitution models for each locus.
+python /usr/local/bin/cloudforest_mpi.py ~/Desktop/PSG_Analyses/Percomorph_500_Phylip/ \
+~/Desktop/PSG_Analyses/Percomorph_500_Cloudforest_Output/ \
+genetrees \
+$HOME/git/cloudforest/cloudforest/binaries/PhyML3linux64 \
+--parallelism multiprocessing \
+--cores 8
 
 
 
