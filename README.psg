@@ -28,6 +28,6 @@ PSG_Analyses/MrBayes/mrbayes.nexus \
 --interleave \
 --unlink
 
-#And lastly, to create one giant concatenated phylip file for all your loci run the following:
+#Now just run mrbayes!
 
-python  /usr/local/bin/format_nexus_files_for_raxml.py ~/Desktop/PSG_Analyses/Percomorph_500/ ~/Desktop/PSG_Analyses/Percomorph_500_Phylip/
+
