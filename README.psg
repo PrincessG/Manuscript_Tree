@@ -31,3 +31,11 @@ PSG_Analyses/MrBayes/mrbayes.nexus \
 #Now just run mrbayes!
 
 
+==========================================================================
+#Here are the commands for making a tree using RaxML. 
+python /usr/loca/bin/genetrees/run_raxml_genetrees.py \
+    ~/Desktop/PSG_Analyses/Percomorph_500_Phylip/ \
+    ~/Desktop/PSG_Analyses/RaxML/ \
+    --outgroup genus_species1 \
+    --cores 12 \
+    --threads 1
