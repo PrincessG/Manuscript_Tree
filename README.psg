@@ -15,7 +15,12 @@ genetrees \
 --parallelism multiprocessing \
 --cores 8
 
+#Now, split the models from the genetree file. 
+/usr/local/lib/python2.7/site-packages/phyluce
 
+python /usr/local/lib/python2.7/site-packages/phyluce/bin/genetrees/split_models_from_genetrees.py \
+~/Desktop/PSG_Analyses/Percomorph_500_Cloudforest_Output/genetrees.tre \
+~/Desktop/PSG_Analyses/Percomorph_500_Cloudforest_Output/output_models.txt
 
 
 #To create one giant concatenated phylip file for all your loci run the following:
