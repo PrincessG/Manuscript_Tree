@@ -29,7 +29,7 @@ PSG_Analyses/MrBayes/mrbayes.nexus \
 --unlink
 
 #Now just run mrbayes!
-
+ mb ~/Desktop/PSG_Analyses/MrBayes/mrbayes.nexus
 
 ==========================================================================
 #Here are the commands for making a tree using RaxML. Note the misspelling of percomorph
