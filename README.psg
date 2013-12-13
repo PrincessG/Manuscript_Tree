@@ -31,7 +31,7 @@ python /usr/local/bin/format_nexus_files_for_mrbayes.py \
 --unlink
 
 #Now just run mrbayes!
- mb ~/Desktop/PSG_Analyses/MrBayes/mrbayes_input_file.nexus
+ mb ~/Desktop/PSG_Analyses/MrBayes/mrbayes_fixed.nexus
 
 ==========================================================================
 #Here are the commands for making a tree using RaxML. Note the misspelling of percomorph
