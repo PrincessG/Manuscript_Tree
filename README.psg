@@ -31,7 +31,13 @@ python /usr/local/bin/format_nexus_files_for_mrbayes.py \
 --unlink
 
 #Now just run mrbayes!
- mb ~/Desktop/PSG_Analyses/MrBayes/mrbayes_input_file_fixed.nexus
+ mb  -i ~/Desktop/PSG_Analyses/MrBayes/mrbayes_input_file_fixed.nexus
+#At the MrBayes prompt:
+	set autoclose=yes nowarn=yes;
+	lset nst=6 rates=invgamma;
+	mcmc nruns=1 ngen=500000 samplefreq=500;
+	Sump burnin=250;
+	Sumt burnin=250;
 
 ==========================================================================
 #Here are the commands for making a tree using RaxML. Note the misspelling of percomorph
