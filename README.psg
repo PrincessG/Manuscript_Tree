@@ -34,13 +34,6 @@ python /usr/local/bin/format_nexus_files_for_mrbayes.py \
  mb  -i ~/Desktop/PSG_Analyses/MrBayes/mrbayes_input_file_fixed.nexus
 #At the MrBayes prompt:
 	set autoclose=yes nowarn=yes;
-	lset nst=6 rates=invgamma;
-	mcmc nruns=1 ngen=500000 samplefreq=500;
-	Sump burnin=250;
-	Sumt burnin=250;
-###### OR
-
-	set autoclose=no nowarn=yes;
 	mcmc nruns=1 ngen=500000 samplefreq=500;
 	Sump burnin=250;
 	Sumt burnin=250;
