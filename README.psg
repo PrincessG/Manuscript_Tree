@@ -22,10 +22,11 @@ python /usr/local/bin/split_models_from_genetrees.py \
 ~/Desktop/PSG_Analyses/Percomorph_500_Cloudforest_Output/output_models.txt
 
 #Create an input file that MrBayes can understand which incorporates the models and the nexus alignments.
+
 python /usr/local/bin/format_nexus_files_for_mrbayes.py \
-~/Desktop/PSG_Analyses/Percomorph_500 \
+~/Desktop/PSG_Analyses/Percomorph_500/ \
 ~/Desktop/PSG_Analyses/Percomorph_500_Cloudforest_Output/output_models.txt \
-PSG_Analyses/MrBayes/mrbayes.nexus \
+~/Desktop/PSG_Analyses/MrBayes/mrbayes_input_file.nexus \
 --interleave \
 --unlink
 
