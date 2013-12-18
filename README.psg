@@ -33,10 +33,17 @@ python /usr/local/bin/format_nexus_files_for_mrbayes.py \
 #Now just run mrbayes!
  mb  -i ~/Desktop/PSG_Analyses/MrBayes/mrbayes_input_file_fixed.nexus
 #At the MrBayes prompt:
-	set autoclose=yes nowarn=yes;
+	set autoclose=no nowarn=yes;
 	mcmc nruns=1 ngen=5000000 samplefreq=500;
 	Sump burnin=5000;
 	Sumt burnin=5000;
+	
+====================================
+BEFORE Running Mr Bayes. Type the following to be able to close the window and continue working elsewhere...
+nohup mpd &
+screen
+[control] a+d
+screen -ls # you should see one screen detached at this point
 ==========================================================================
 #Here are the commands for making a tree using RaxML. Note the misspelling of percomorph
 python /usr/local/bin/run_raxml_genetrees.py \
