@@ -4,9 +4,7 @@ Manuscript_Tree
 #transfer everything over using fileZilla. Be sure to use sftp not fftp or else it won't work.
 
 #First, connect the analysis lab computer via the ssh key. Then convert alignment files to phylip format.
-python /usr/local/bin/convert_one_align_to_another.py ~/Desktop/PSG_Analyses/Percomorph_500 ~/Desktop/PSG_Analyses/Percomorph_500_Phylip/ \
---input-format nexus \
---output-format phylip \
+python /usr/local/bin/convert_one_align_to_another.py --alignments ~/Desktop/PSG_Analyses/Percomorph_988 --output ~/Desktop/PSG_Analyses/Percomorph_988_Phylip/ --input-format nexus --output-format phylip \
 
 #Then run CloudForest on the UCE phylip files to calculate the substitution models for each locus.
 python /usr/local/bin/cloudforest_mpi.py ~/Desktop/PSG_Analyses/Percomorph_500_Phylip/ \
