@@ -6,13 +6,11 @@ Manuscript_Tree
 #First, connect the analysis lab computer via the ssh key. Then convert alignment files to phylip format.
 python /usr/local/bin/convert_one_align_to_another.py --alignments ~/Desktop/PSG_Analyses/Percomorph_988 --output ~/Desktop/PSG_Analyses/Percomorph_988_Phylip/ --input-format nexus --output-format phylip \
 
-#Then run CloudForest on the UCE phylip files to calculate the substitution models for each locus.
-python /usr/local/bin/cloudforest_mpi.py ~/Desktop/PSG_Analyses/Percomorph_500_Phylip/ \
-~/Desktop/PSG_Analyses/Percomorph_500_Cloudforest_Output/ \
-genetrees \
-/home/analysis/Downloads/PhyML-3.1/PhyML-3.1_linux64 \
---parallelism multiprocessing \
---cores 8
+#Next make the output directory.
+mkdir Percomorph_988_Cloudforest_Output
+
+#Then run CloudForest on the UCE phylip files to calculate the substitution models for each locus. 
+python /usr/local/bin/cloudforest_mpi.py ~/Desktop/PSG_Analyses/Percomorph_988_Phylip/ ~/Desktop/PSG_Analyses/Percomorph_988_Cloudforest_Output genetrees /home/analysis/Downloads/PhyML-3.1/PhyML-3.1_linux64 --parallelism multiprocessing --cores 8
 
 #Now, split the models from the genetree file.
 python /usr/local/bin/split_models_from_genetrees.py \
