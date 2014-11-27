@@ -1,7 +1,7 @@
 Manuscript_Tree
 ===============
 #Here are the commands I'm using to make the phylogeny for the Manuscript.Prior to running these scripts I had to 
-#transfer everything over using fileZilla.
+#transfer everything over using fileZilla. Be sure to use sftp not fftp or else it won't work.
 
 #First, connect the analysis lab computer via the ssh key. Then convert alignment files to phylip format.
 python /usr/local/bin/convert_one_align_to_another.py ~/Desktop/PSG_Analyses/Percomorph_500 ~/Desktop/PSG_Analyses/Percomorph_500_Phylip/ \
