@@ -13,9 +13,7 @@ mkdir Percomorph_988_Cloudforest_Output
 python /usr/local/bin/cloudforest_mpi.py ~/Desktop/PSG_Analyses/Percomorph_988_Phylip/ ~/Desktop/PSG_Analyses/Percomorph_988_Cloudforest_Output genetrees /home/analysis/Downloads/PhyML-3.1/PhyML-3.1_linux64 --parallelism multiprocessing --cores 8
 
 #Now, split the models from the genetree file.
-python /usr/local/bin/split_models_from_genetrees.py \
-~/Desktop/PSG_Analyses/Percomorph_500_Cloudforest_Output/genetrees.tre \
-~/Desktop/PSG_Analyses/Percomorph_500_Cloudforest_Output/output_models.txt
+python /usr/local/bin/split_models_from_genetrees.py --genetrees ~/Desktop/PSG_Analyses/Percomorph_988_Cloudforest_Output/genetrees.tre --output ~/Desktop/PSG_Analyses/Percomorph_988_Cloudforest_Output/output_models.txt
 
 #Create an input file that MrBayes can understand which incorporates the models and the nexus alignments.
 
